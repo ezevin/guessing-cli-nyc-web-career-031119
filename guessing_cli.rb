@@ -7,7 +7,7 @@ def run_guessing_game
   computer = rand(1..6).to_s
  if guess == computer 
    puts "You guessed the correct number!"
- elsif guess != computer && (1..6).include?(guess)
+ elsif guess != computer && (1..6).to_a.include?(guess.to_i)
     puts "The computer guessed #{computer}."
  elsif guess == 'exit'
    puts "Goodbye!"
