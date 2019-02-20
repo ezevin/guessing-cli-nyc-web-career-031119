@@ -4,6 +4,7 @@ def run_guessing_game
   guess = gets.chomp
   computer = rand(1..6).to_s
  if guess == computer && guess == (1..6)
+   binding.pry
    puts "You guessed the correct number!"
  elsif guess != computer && guess == (1..6)
     puts "The computer guessed #{computer}."
