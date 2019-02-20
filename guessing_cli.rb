@@ -5,8 +5,8 @@ def run_guessing_game
   computer = rand(1..6).to_s
  if guess == computer && guess == (1..6)
    puts "You guessed the correct number!"
- elsif guess != computer && guess == 'exit'
-    puts "Goodbye"
+ elsif guess != computer && guess == (1..6)
+    puts "Goodb"
  else 
    puts "The computer guessed #{computer}."
  end 
