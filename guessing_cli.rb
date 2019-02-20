@@ -4,4 +4,6 @@ def run_guessing_game
   guess = gets.downcase.chomp
   computer = rand(1..6).to_s
  if guess == computer 
-   "pyt"
+   puts "You guessed the correct number!"
+ end 
+ end 
