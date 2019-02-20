@@ -6,8 +6,8 @@ def run_guessing_game
  if guess == computer && guess == (1..6)
    puts "You guessed the correct number!"
  elsif guess != computer && guess == (1..6)
-    puts "Goodb"
+    puts "The computer guessed #{computer}."
  else 
-   puts "The computer guessed #{computer}."
+   puts "Goodbye!"
  end 
  end 
